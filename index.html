@@ -248,13 +248,16 @@ dark:bg-none
     <h2 class="text-center text-5xl"> Get in touch</h2>
     <p class="max-w-2xl mx-auto text-center mt-5 mb-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero incidunt et debitis earum numquam voluptatibus.</p>
 
-    <form action="" class="max-w-2xl mx-auto">
-      <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-        <input type="text" placeholder="Enter your name" class="flex-1 outline-none border-[0.5px] border-gray-400 rounded-md bg-white p-3 dark:bg-darkHoverBox/40 dark:border-white/90">
+    <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
 
-        <input type="email" placeholder="Enter your email" class="flex-1 outline-none border-[0.5px] border-gray-400 rounded-md bg-white p-3 dark:bg-darkHoverBox/40 dark:border-white/90">
+        <input type="hidden" name="access_key" value="059e783d-1fda-4a62-a374-21c8e75c4a5c">
+
+      <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+        <input type="text" placeholder="Enter your name" class="flex-1 outline-none border-[0.5px] border-gray-400 rounded-md bg-white p-3 dark:bg-darkHoverBox/40 dark:border-white/90" required name="name">
+
+        <input type="email" placeholder="Enter your email" class="flex-1 outline-none border-[0.5px] border-gray-400 rounded-md bg-white p-3 dark:bg-darkHoverBox/40 dark:border-white/90" required name="email">
       </div>
-      <textarea placeholder="Enter your message" rows="6" class="outline-none border-[0.5px] mb-6 bg-white rounded-md border-gray-400 w-full p-4 dark:bg-darkHoverBox/40 dark:border-white/90"></textarea>
+      <textarea placeholder="Enter your message" rows="6" class="outline-none border-[0.5px] mb-6 bg-white rounded-md border-gray-400 w-full p-4 dark:bg-darkHoverBox/40 dark:border-white/90" required name="message"></textarea>
       <button class="flex justify-between items-center py-3 px-8 bg-black/80 text-white gap-2 hover:bg-black duration-500 rounded-full mx-auto w-max dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHoverBox">Submit
         <img src="./images/right-arrow-white.png" alt="" class="w-4">
       </button>
